@@ -19,3 +19,6 @@
 [submodule "blogs"]
 	path = blogs
 	url = git@github.com:dantyan/django-blogs.git
+[submodule "events"]
+	path = events
+	url = git@github.com:dantyan/django-events.git
