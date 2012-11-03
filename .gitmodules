@@ -25,3 +25,6 @@
 [submodule "forum"]
 	path = forum
 	url = git@github.com:dantyan/django-forum.git
+[submodule "gallery"]
+	path = gallery
+	url = git@github.com:dantyan/django-gallery.git
