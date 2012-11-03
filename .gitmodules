@@ -4,3 +4,6 @@
 [submodule "bookmarks"]
 	path = bookmarks
 	url = git@github.com:dantyan/django-bookmarks.git
+[submodule "common"]
+	path = common
+	url = git@github.com:dantyan/django-common.git
