@@ -10,3 +10,6 @@
 [submodule "guidebook"]
 	path = guidebook
 	url = git@github.com:dantyan/django-guidebook.git
+[submodule "accounts"]
+	path = accounts
+	url = git@github.com:dantyan/django-accounts.git
