@@ -28,3 +28,6 @@
 [submodule "gallery"]
 	path = gallery
 	url = git@github.com:dantyan/django-gallery.git
+[submodule "location"]
+	path = location
+	url = git@github.com:dantyan/django-location.git
