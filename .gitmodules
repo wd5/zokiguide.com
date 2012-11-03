@@ -1,3 +1,6 @@
 [submodule "catalog"]
 	path = catalog
 	url = git@github.com:dantyan/django-catalog.git
+[submodule "bookmarks"]
+	path = bookmarks
+	url = git@github.com:dantyan/django-bookmarks.git
