@@ -34,3 +34,6 @@
 [submodule "main"]
 	path = main
 	url = git@github.com:dantyan/zokiguide-main.git
+[submodule "tours"]
+	path = tours
+	url = git@github.com:dantyan/django-tours.git
