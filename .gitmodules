@@ -13,3 +13,6 @@
 [submodule "accounts"]
 	path = accounts
 	url = git@github.com:dantyan/django-accounts.git
+[submodule "account"]
+	path = account
+	url = git@github.com:dantyan/django-account.git
