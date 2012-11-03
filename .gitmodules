@@ -7,3 +7,6 @@
 [submodule "common"]
 	path = common
 	url = git@github.com:dantyan/django-common.git
+[submodule "guidebook"]
+	path = guidebook
+	url = git@github.com:dantyan/django-guidebook.git
