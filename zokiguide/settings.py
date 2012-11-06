@@ -3,7 +3,6 @@ import os
 
 IN_PRODUCTION = True
 
-## this code should be at the bottom
 try:
     from local_settings import *
 except ImportError, e:
@@ -12,8 +11,8 @@ except ImportError, e:
 DEBUG = not IN_PRODUCTION
 TEMPLATE_DEBUG = DEBUG
 
-ADMINS = ( 
-     ( 'Dan Tyan', 'dan.tyan@gmail.com' ),
+ADMINS = (
+    ( 'Dan Tyan', 'dan.tyan@gmail.com' ),
  )
 
 MANAGERS = ADMINS
@@ -22,8 +21,8 @@ if IN_PRODUCTION:
     DOCROOT = '/home/zokisoft/www/zokiguide/'
     APPPATH = '/home/zokisoft/django/zokiguide/'
 else:
-    DOCROOT = '/home/dan/www/zokidjango/zokiguide/'
-    APPPATH = '/home/dan/www/zokidjango/zokiguide/'
+    DOCROOT = '/home/dan/www/django/zokiguide/'
+    APPPATH = '/home/dan/www/django/zokiguide/'
 
 
 
@@ -70,7 +69,7 @@ STATIC_ROOT = DOCROOT + 'static/'
 STATIC_URL = '/static/'
 
 # Additional locations of static files
-STATICFILES_DIRS = ( 
+STATICFILES_DIRS = (
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
@@ -91,7 +90,7 @@ STATICFILES_DIRS = (
 
 # List of finder classes that know how to find static files in
 # various locations.
-STATICFILES_FINDERS = ( 
+STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
 #    'django.contrib.staticfiles.finders.DefaultStorageFinder',
@@ -100,13 +99,13 @@ STATICFILES_FINDERS = (
 
 
 # List of callables that know how to import templates from various sources.
-TEMPLATE_LOADERS = ( 
+TEMPLATE_LOADERS = (
     'django.template.loaders.filesystem.Loader',
     'django.template.loaders.app_directories.Loader',
 #     'django.template.loaders.eggs.Loader',
  )
 
-MIDDLEWARE_CLASSES = ( 
+MIDDLEWARE_CLASSES = (
     'django.middleware.common.CommonMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -122,7 +121,7 @@ ROOT_URLCONF = 'zokiguide.urls'
 # Python dotted path to the WSGI application used by Django's runserver.
 WSGI_APPLICATION = 'zokiguide.wsgi.application'
 
-TEMPLATE_DIRS = ( 
+TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
@@ -142,7 +141,7 @@ TEMPLATE_DIRS = (
 #    os.path.join(os.path.dirname(__file__), 'templates').replace('\\', '/'),
  )
 
-TEMPLATE_CONTEXT_PROCESSORS = ( 
+TEMPLATE_CONTEXT_PROCESSORS = (
     'django.contrib.auth.context_processors.auth',
     'django.contrib.messages.context_processors.messages',
     'django.core.context_processors.debug',
@@ -155,7 +154,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 #    'blog.context_processors.common',
  )
 
-INSTALLED_APPS = ( 
+INSTALLED_APPS = (
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -295,7 +294,7 @@ TINYMCE_DEFAULT_CONFIG = {
 INTERNAL_IPS = ( '127.0.0.1', )
 
 
-STATUS_CHOICES = ( 
+STATUS_CHOICES = (
     ( 'active', 'active' ),
     ( 'inactive', 'inactive' ),
     ( 'draft', 'draft' ),
