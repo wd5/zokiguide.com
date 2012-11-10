@@ -5,4 +5,5 @@
 .pydevproject
 .settings
 media/*
+log/*
 local_settings.py

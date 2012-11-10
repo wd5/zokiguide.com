@@ -58,11 +58,11 @@ function rand(min, max)
 	return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-if( window.jQuery )
-{
-	jQuery(function(){
-		$('a[href="#"]').live('click', function(event){
-			event.preventDefault();
-		});
-	});
-}
+// if( window.jQuery )
+// {
+	// jQuery(function(){
+		// $('a[href="#"]').live('click', function(event){
+			// event.preventDefault();
+		// });
+	// });
+// }
