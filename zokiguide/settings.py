@@ -279,15 +279,6 @@ INSTALLED_APPS += ( 'bootstrapform', )
 
 #--------------------------------
 
-#--------------------------------
-# django categories
-#--------------------------------
-
-# INSTALLED_APPS += (
-#    'categories',
-#    'categories.editor',
-# )
-#--------------------------------
 
 # ## SOUTH: BEGIN
 INSTALLED_APPS += ( 'south', )
@@ -303,18 +294,6 @@ CACHES = {
     }
 }
 
-
-#_PATH = os.path.abspath( os.path.dirname( __file__ ) )
-
-#MEDIA_ROOT = os.path.join( _PATH, 'files', 'media' )
-#MEDIA_URL = '/media/'
-
-#STATIC_ROOT = os.path.join( _PATH, 'files', 'static' )
-#STATIC_URL = '/static/'
-#STATICFILES_DIRS += (
-#    os.path.join( _PATH, 'static' ),
-# )
-
 TINYMCE_JS_ROOT = STATIC_URL + 'js/tiny_mce/'
 TINYMCE_JS_URL = STATIC_URL + 'js/tiny_mce/tiny_mce.js'
 TINYMCE_DEFAULT_CONFIG = {
@@ -322,9 +301,6 @@ TINYMCE_DEFAULT_CONFIG = {
     'theme': "advanced",
     'height':"500px",
 }
-#TINYMCE_COMPRESSOR = True
-
-#ADMIN_MEDIA_PREFIX = '/static/admin/'
 
 INTERNAL_IPS = ( '127.0.0.1', )
 
@@ -346,49 +322,7 @@ EMAIL_HOST_USER = DEFAULT_FROM_EMAIL
 EMAIL_HOST_PASSWORD = 'craZZyDemon'
 EMAIL_USE_TLS = True
 
-#AJAX_LOOKUP_CHANNELS = {
-#    #   pass a dict with the model and the field to search against
-#    'city'  : {'model':'example.person', 'search_field':'name'}
-#}
-# magically include jqueryUI/js/css
-#AJAX_SELECT_BOOTSTRAP = True
-#AJAX_SELECT_INLINES = 'inline'
-
 USE_DJANGO_JQUERY = True
 
-#
-#FILEBROWSER_MEDIA_ROOT = MEDIA_ROOT
-#FILEBROWSER_MEDIA_URL = MEDIA_URL
-#FILEBROWSER_DIRECTORY = 'uploads/'
-#
-#FILEBROWSER_EXTENSIONS = {
-#    'Folder': [''],
-#    'Image': ['.jpg', '.jpeg', '.gif', '.png', '.tif', '.tiff'],
-#    'Document': ['.pdf', '.doc', '.rtf', '.txt', '.xls', '.csv'],
-#    'Video': ['.mov', '.wmv', '.mpeg', '.mpg', '.avi', '.rm'],
-#    'Audio': ['.mp3', '.mp4', '.wav', '.aiff', '.midi', '.m4p']
-#}
-#FILEBROWSER_SELECT_FORMATS = {
-#    'file': ['Folder', 'Image', 'Document', 'Video', 'Audio'],
-#    'image': ['Image'],
-#    'document': ['Document'],
-#    'media': ['Video', 'Audio'],
-#}
-#FILEBROWSER_VERSIONS = {
-#    'admin_thumbnail': {'verbose_name': 'Admin Thumbnail', 'width': 60, 'height': 60, 'opts': 'crop'},
-#    'thumbnail': {'verbose_name': 'Thumbnail (1 col)', 'width': 60, 'height': 60, 'opts': 'crop'},
-#    'small': {'verbose_name': 'Small (2 col)', 'width': 140, 'height': '', 'opts': ''},
-#    'medium': {'verbose_name': 'Medium (4col )', 'width': 300, 'height': '', 'opts': ''},
-#    'big': {'verbose_name': 'Big (6 col)', 'width': 460, 'height': '', 'opts': ''},
-#    'large': {'verbose_name': 'Large (8 col)', 'width': 680, 'height': '', 'opts': ''},
-#}
-#FILEBROWSER_ADMIN_VERSIONS = ['thumbnail', 'small', 'medium', 'big', 'large']
-#FILEBROWSER_ADMIN_THUMBNAIL = 'admin_thumbnail'
-#FILEBROWSER_PLACEHOLDER = ''
-#FILEBROWSER_SHOW_PLACEHOLDER = ''
-#FILEBROWSER_FORCE_PLACEHOLDER = ''
-#FILEBROWSER_IMAGE_MAXBLOCK = '1024*1024'
-#FILEBROWSER_MAX_UPLOAD_SIZE = 10485760
-#FILEBROWSER_CONVERT_FILENAME = True
-#FILEBROWSER_LIST_PER_PAGE = 50
-#FILEBROWSER_DEFAULT_PERMISSIONS = 0755
+INSTALLED_APPS += ( 'imagekit', )
+
