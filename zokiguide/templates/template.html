@@ -181,9 +181,11 @@
     {% if settings.IN_PRODUCTION %}
         {% block yandex_metrika %}{% endblock %}
     {% endif %}
-
-	{% if not settings.IN_PRODUCTION %}
-    	<pre>{% debug %}</pre>
-    {% endif %}
+    
+     {% comment %}
+    	{% if not settings.IN_PRODUCTION %}
+        	<pre>{% debug %}</pre>
+        {% endif %}
+     {% endcomment %}
 </body>
 </html>
