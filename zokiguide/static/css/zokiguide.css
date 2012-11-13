@@ -294,9 +294,13 @@ p
 }
 
 
-	#categories ul{
+	#categories ul,
+	#countries ul
+	{
 		 margin: 0 0 0px 10px;
 	}
-	#categories ul li {
+	#categories ul li,
+	#countries ul li
+	{
 		list-style:none;	
 	}
