@@ -18,8 +18,8 @@ ADMINS = (
 MANAGERS = ADMINS
 
 if IN_PRODUCTION:
-    DOCROOT = '/home/zokisoft/www/zokiguide/'
-    APPPATH = '/home/zokisoft/django/zokiguide/'
+    DOCROOT = '/home/dantyan/webapps/zokiguide/zokiguide/'
+    APPPATH = '/home/dantyan/webapps/zokiguide/zokiguide/'
 else:
     DOCROOT = '/home/dan/www/django/zokiguide/'
     APPPATH = '/home/dan/www/django/zokiguide/'
@@ -253,6 +253,7 @@ LOGGING = {
 #LOGOUT_URL = '/account/logout/'
 LOGIN_REDIRECT_URL = '/'
 
+
 #--------------------------------
 # debug toolbar
 #--------------------------------
@@ -262,6 +263,7 @@ if DEBUG:
     DEBUG_TOOLBAR_CONFIG = {
         'INTERCEPT_REDIRECTS': False,
     }
+
 
 #--------------------------------
 
@@ -328,3 +330,5 @@ USE_DJANGO_JQUERY = True
 
 INSTALLED_APPS += ( 'imagekit', )
 
+INSTALLED_APPS += ( 'compressor', )
+STATICFILES_FINDERS += ( 'compressor.finders.CompressorFinder', )

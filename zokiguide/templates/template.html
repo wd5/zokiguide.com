@@ -13,62 +13,49 @@
 
     <title>{% block title %}{% endblock %}</title>
 
-    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
-    <link rel="stylesheet" href="{% static 'css/bootstrap-responsive.css' %}">
+    {% load compress %}
 
-    <link rel="stylesheet" href="{% static 'css/common.css' %}">
+    {% compress css %}
+        <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+        <link rel="stylesheet" href="{% static 'css/bootstrap-responsive.css' %}">
+    
+        <link rel="stylesheet" href="{% static 'css/common.css' %}">
+    
+        <link rel="stylesheet" href="{% static 'css/zokiguide.css' %}">
+        {% block module_style %}{% endblock %}
+        {% block template_style %}{% endblock %}
+        {% block custom_css %}{% endblock %}
+    {% endcompress %}
 
-    <link rel="stylesheet" href="{% static 'css/zokiguide.css' %}">
-
-
-    {% block module_style %}{% endblock %}
-    {% block template_style %}{% endblock %}
-    {% block custom_css %}{% endblock %}
-
-    <script src="{% static 'js/libs/modernizr-2.6.2.min.js' %}"></script>
-    <script src="{% static 'js/jquery/jquery.min.js' %}"></script>
-
-    <script>window.jQuery || document.write('<scr'+'ipt src="{% static 'js/jquery.min.js' %}"><\/scr'+'ipt>')</script>
-    <script>      	
-  		var django = grp = {
-			"jQuery": jQuery.noConflict(true)
-		};
-		var jQuery = django.jQuery;
-		var $ = jQuery;
-  	</script>
+    
 
     {% if settings.IN_PRODUCTION %}
-        <script type="text/javascript">
-			var _gaq = _gaq || [];
-			_gaq.push(['_setAccount','UA-15254139-1']);
-			_gaq.push(['_trackPageview']);
-	
-			(function() {
-				var ga = document.createElement('script');
-				ga.type = 'text/javascript';
-				ga.async = true;
-				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-				var s = document.getElementsByTagName('script')[0];
-				s.parentNode.insertBefore(ga, s);
-			})();
-		</script>
-        <script>
-            var _gaq = window._gaq || [];
-            window.onerror = function(msg, url, line) {
-                var preventErrorAlert = true;
-                _gaq.push(['_trackEvent', 'JS Error', msg, navigator.userAgent + ' -> ' + url + " : " + line]);
-                return preventErrorAlert;
-            };
-            jQuery.error = function (message) {
-                _gaq.push(['_trackEvent', 'jQuery Error', message, navigator.userAgent]);
-            }
-        </script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    {% else %}
+        <script src="{% static 'js/jquery/jquery.min.js' %}"></script>
     {% endif %}
-
-    <script src="{% static 'js/common.js' %}"></script>
-
-    {% block custom_js %}{% endblock %}
-
+    
+    {% compress js %}
+        <script src="{% static 'js/libs/modernizr-2.6.2.min.js' %}"></script>        
+    
+        <script>window.jQuery || document.write('<scr'+'ipt src="{% static 'js/jquery.min.js' %}"><\/scr'+'ipt>')</script>
+        <script>      	
+      		var django = grp = {
+    			"jQuery": jQuery.noConflict(true)
+    		};
+    		var jQuery = django.jQuery;
+    		var $ = jQuery;
+      	</script>
+    
+        {% if settings.IN_PRODUCTION %}
+            <script type="text/javascript" src="{{ STATIC_URL }}js/google-analytics.js"></script>
+        {% endif %}
+    
+        <script src="{% static 'js/common.js' %}"></script>
+    
+        {% block custom_js %}{% endblock %}
+        
+    {% endcompress %}
     <meta name="description" content="{% block meta_description %}{{ data.page.meta.description }}{% endblock %}">
     <meta name="keywords" content="{% block meta_keywords %}{{ data.page.meta.keywords }}{% endblock %}">
 
@@ -80,7 +67,6 @@
     <!-- Place favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
     <link rel="shortcut icon" href="/favicon.ico">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-
 
     {% block header_code %}{% endblock %}
     {% block yandex_meta %}{% endblock %}
@@ -171,12 +157,13 @@
 
     {% block footer %}{% endblock %}
 
-    <script type="text/javascript" src="{% static 'js/plugins.js' %}"></script>
-    <script type="text/javascript" src="{% static 'js/libs/bootstrap.min.js' %}"></script>
-    <script type="text/javascript" src="{% static 'js/zokiguide.js' %}"></script>
-    
 
-    {% block footer_code %}{% endblock %}
+    {% compress js %}    
+        <script type="text/javascript" src="{% static 'js/plugins.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/libs/bootstrap.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/zokiguide.js' %}"></script>
+        {% block footer_code %}{% endblock %}
+    {% endcompress %}
 
     {% if settings.IN_PRODUCTION %}
         {% block yandex_metrika %}{% endblock %}
