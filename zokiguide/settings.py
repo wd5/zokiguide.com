@@ -332,3 +332,5 @@ INSTALLED_APPS += ( 'imagekit', )
 
 INSTALLED_APPS += ( 'compressor', )
 STATICFILES_FINDERS += ( 'compressor.finders.CompressorFinder', )
+
+#end file
