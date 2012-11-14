@@ -160,7 +160,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'django.core.context_processors.static',
     'django.core.context_processors.request',
     'django.core.context_processors.csrf',
-#    'zokiguide.context_processors.custom',
+    'zokiguide.context_processors.custom',
 #    'blog.context_processors.common',
  )
 
