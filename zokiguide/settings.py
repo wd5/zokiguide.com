@@ -187,6 +187,7 @@ INSTALLED_APPS = (
     'account',
     'catalog',
     'bookmarks',
+    'guidebook',
     'main',
     'forum',
     'location',
