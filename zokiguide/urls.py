@@ -29,6 +29,7 @@ urlpatterns = patterns( '',
     url( r'^bookmarks/', include( 'bookmarks.urls' ) ),
     url( r'^guidebook/', include( 'guidebook.urls' ) ),
     url( r'^catalog/', include( 'catalog.urls' ) ),
+    url( r'^classifieds/', include( 'classifieds.urls' ) ),
     url( r'^forum/', include( 'forum.urls' ) ),
  )
 
