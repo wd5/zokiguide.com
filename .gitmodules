@@ -37,3 +37,6 @@
 [submodule "tours"]
 	path = tours
 	url = git@github.com:dantyan/django-tours.git
+[submodule "classifieds"]
+	path = classifieds
+	url = git@github.com:dantyan/django-classifieds.git
