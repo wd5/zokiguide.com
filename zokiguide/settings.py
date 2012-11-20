@@ -187,6 +187,7 @@ INSTALLED_APPS = (
 
 
     'account',
+    'blogs',
     'catalog',
     'classifieds',
     'bookmarks',
