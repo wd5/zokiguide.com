@@ -149,7 +149,6 @@ TEMPLATE_DIRS = (
 	APPPATH + 'tours/templates',
     APPPATH + 'common/templates',
 	APPPATH + 'zokiguide/templates',
-#    os.path.join(os.path.dirname(__file__), 'templates').replace('\\', '/'),
  )
 
 TEMPLATE_CONTEXT_PROCESSORS = ( 
