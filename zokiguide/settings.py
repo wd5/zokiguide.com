@@ -42,7 +42,14 @@ TIME_ZONE = 'America/Chicago'
 
 # Language code for this installation. All choices can be found here:
 # http://www.i18nguy.com/unicode/language-identifiers.html
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'ru'
+
+#ugettext = lambda s: s
+#
+#LANGUAGES = (
+#    ('en', ugettext('English')),
+#    ('ru', ugettext('Russian')),
+#)
 
 SITE_ID = 1
 
@@ -118,6 +125,7 @@ MIDDLEWARE_CLASSES = (
 #    'django.middleware.cache.UpdateCacheMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+#    'django.middleware.locale.LocaleMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
@@ -146,7 +154,7 @@ TEMPLATE_DIRS = (
 	APPPATH + 'gallery/templates',
 	APPPATH + 'guidebook/templates',
 	APPPATH + 'main/templates',
-	APPPATH + 'tours/templates',
+    APPPATH + 'tours/templates',
     APPPATH + 'common/templates',
 	APPPATH + 'zokiguide/templates',
  )
@@ -154,7 +162,7 @@ TEMPLATE_DIRS = (
 TEMPLATE_CONTEXT_PROCESSORS = ( 
     'django.contrib.auth.context_processors.auth',
     'django.contrib.messages.context_processors.messages',
-#    'django.core.context_processors.debug',
+    'django.core.context_processors.debug',
     'django.core.context_processors.i18n',
     'django.core.context_processors.media',
     'django.core.context_processors.static',

@@ -1,0 +1,72 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-11-26 19:56+0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: blogs/templates/blogs/blogs.html:5 blogs/templates/blogs/blogs.html:13
+#: blogs/templates/blogs/blogs.html:15 common/templates/template.html:119
+msgid "Blogs"
+msgstr ""
+
+#: blogs/templates/blogs/blogs.html:11
+#, python-format
+msgid " %(blogs)s "
+msgstr ""
+
+#: common/templates/template.html:113
+msgid "Main"
+msgstr ""
+
+#: common/templates/template.html:114
+msgid "Catalog"
+msgstr ""
+
+#: common/templates/template.html:115
+msgid "Guidebook"
+msgstr ""
+
+#: common/templates/template.html:116
+msgid "Events"
+msgstr ""
+
+#: common/templates/template.html:117
+msgid "Tours"
+msgstr ""
+
+#: common/templates/template.html:118
+msgid "Travelmate"
+msgstr ""
+
+#: common/templates/template.html:120
+msgid "Galleries"
+msgstr ""
+
+#: common/templates/template.html:121
+msgid "Calendar"
+msgstr ""
+
+#: common/templates/template.html:122
+msgid "Forum"
+msgstr ""
+
+#: common/templates/template.html:124
+msgid "Classifieds"
+msgstr ""
+
+#: common/templates/template.html:125
+msgid "Online resources"
+msgstr ""
