@@ -316,6 +316,17 @@ TINYMCE_DEFAULT_CONFIG = {
     'plugins': "table,spellchecker,paste,searchreplace",
     'theme': "advanced",
     'height':"500px",
+    'fix_list_elements' : True,
+    'force_p_newlines' : False,
+    'force_br_newlines': False,
+    'forced_root_block': '',
+    'keep_styles':'true',
+    'remove_linebreaks' : False,
+    'paste_auto_cleanup_on_paste' : True,
+#    URL
+    'relative_urls' : False,
+    'remove_script_host': False,
+    'convert_urls' : False,
 }
 
 INTERNAL_IPS = ( '127.0.0.1', )
