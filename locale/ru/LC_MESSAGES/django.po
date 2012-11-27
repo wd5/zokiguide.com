@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-11-26 20:50+0600\n"
+"POT-Creation-Date: 2012-11-27 13:29+0600\n"
 "PO-Revision-Date: 2012-11-26 18:51+0600\n"
 "Last-Translator: Dan Tyan <dan.tyan@gmail.com>\n"
 "Language-Team: Russian <>\n"
@@ -20,50 +20,54 @@ msgstr ""
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
 
 #: blogs/templates/blogs/blogs.html:5 blogs/templates/blogs/blogs.html:11
-#: blogs/templates/blogs/blogs.html:13 common/templates/template.html:119
+#: blogs/templates/blogs/blogs.html:13 common/templates/template.html:131
 msgid "Blogs"
 msgstr "Блоги"
 
-#: common/templates/template.html:113
+#: common/templates/template.html:120 common/templates/template.html.py:125
 msgid "Main"
 msgstr "Главная"
 
-#: common/templates/template.html:114
+#: common/templates/template.html:121
+msgid "main"
+msgstr "главная"
+
+#: common/templates/template.html:126
 msgid "Catalog"
 msgstr "Каталог"
 
-#: common/templates/template.html:115
+#: common/templates/template.html:127
 msgid "Guidebook"
 msgstr "Путеводитель"
 
-#: common/templates/template.html:116
+#: common/templates/template.html:128
 msgid "Events"
 msgstr "События"
 
-#: common/templates/template.html:117
+#: common/templates/template.html:129
 msgid "Tours"
 msgstr "Туры"
 
-#: common/templates/template.html:118
+#: common/templates/template.html:130
 msgid "Travelmate"
 msgstr ""
 
-#: common/templates/template.html:120
+#: common/templates/template.html:132
 msgid "Galleries"
 msgstr "Галлереи"
 
-#: common/templates/template.html:121
+#: common/templates/template.html:133
 msgid "Calendar"
 msgstr "Календарь"
 
-#: common/templates/template.html:122
+#: common/templates/template.html:134
 msgid "Forum"
 msgstr "Форум"
 
-#: common/templates/template.html:124
+#: common/templates/template.html:136
 msgid "Classifieds"
 msgstr "Объявления"
 
-#: common/templates/template.html:125
+#: common/templates/template.html:137
 msgid "Online resources"
 msgstr "Веб-ресурсы"
