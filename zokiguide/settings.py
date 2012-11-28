@@ -325,7 +325,7 @@ CACHES = {
 TINYMCE_JS_ROOT = STATIC_URL + 'js/tiny_mce/'
 TINYMCE_JS_URL = STATIC_URL + 'js/tiny_mce/tiny_mce.js'
 TINYMCE_DEFAULT_CONFIG = {
-    'plugins': "table,spellchecker,paste,searchreplace",
+    'plugins': "table,spellchecker,paste,searchreplace,inlinepopups",
     'theme': "advanced",
     'height':"500px",
     'fix_list_elements' : True,
@@ -335,6 +335,7 @@ TINYMCE_DEFAULT_CONFIG = {
     'keep_styles':'true',
     'remove_linebreaks' : False,
     'paste_auto_cleanup_on_paste' : True,
+    'dialog_type' : 'modal',
 #    URL
     'relative_urls' : False,
     'remove_script_host': False,
