@@ -275,7 +275,7 @@ LOGGING = {
 
 #LOGIN_URL = '/account/login/'
 #LOGOUT_URL = '/account/logout/'
-LOGIN_REDIRECT_URL = '/'
+LOGIN_REDIRECT_URL = '/account/'
 
 
 #--------------------------------

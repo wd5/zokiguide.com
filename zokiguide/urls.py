@@ -32,6 +32,7 @@ urlpatterns = patterns( '',
     url( r'^catalog/', include( 'catalog.urls' ) ),
     url( r'^classifieds/', include( 'classifieds.urls' ) ),
     url( r'^forum/', include( 'forum.urls' ) ),
+    url( r'^u/', include( 'u.urls' ) ),
  )
 
 
