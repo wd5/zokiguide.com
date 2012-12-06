@@ -1,5 +1,6 @@
 from django.conf.urls import patterns, include, url
 from django.conf import settings
+from django.views.generic.simple import direct_to_template
 #from filebrowser.sites import site
 
 # Uncomment the next two lines to enable the admin:
@@ -33,6 +34,10 @@ urlpatterns = patterns( '',
     url( r'^classifieds/', include( 'classifieds.urls' ) ),
     url( r'^forum/', include( 'forum.urls' ) ),
     url( r'^u/', include( 'u.urls' ) ),
+    url( r'^search-result/', direct_to_template, {
+        'template': 'common/google-search-result.html'
+    }),
+
  )
 
 

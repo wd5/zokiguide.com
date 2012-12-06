@@ -11,7 +11,7 @@ except ImportError, e:
 DEBUG = not IN_PRODUCTION
 TEMPLATE_DEBUG = DEBUG
 
-ADMINS = ( 
+ADMINS = (
     ( 'Dan Tyan', 'dan.tyan@gmail.com' ),
  )
 
@@ -88,7 +88,7 @@ USE_TZ = True
 
 
 # Additional locations of static files
-STATICFILES_DIRS = ( 
+STATICFILES_DIRS = (
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
@@ -110,7 +110,7 @@ STATICFILES_DIRS = (
 
 # List of finder classes that know how to find static files in
 # various locations.
-STATICFILES_FINDERS = ( 
+STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
 #    'django.contrib.staticfiles.finders.DefaultStorageFinder',
@@ -119,13 +119,13 @@ STATICFILES_FINDERS = (
 
 
 # List of callables that know how to import templates from various sources.
-TEMPLATE_LOADERS = ( 
+TEMPLATE_LOADERS = (
     'django.template.loaders.filesystem.Loader',
     'django.template.loaders.app_directories.Loader',
 #     'django.template.loaders.eggs.Loader',
  )
 
-MIDDLEWARE_CLASSES = ( 
+MIDDLEWARE_CLASSES = (
 #    'django.middleware.cache.UpdateCacheMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -143,7 +143,7 @@ ROOT_URLCONF = 'zokiguide.urls'
 # Python dotted path to the WSGI application used by Django's runserver.
 WSGI_APPLICATION = 'zokiguide.wsgi.application'
 
-TEMPLATE_DIRS = ( 
+TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
@@ -155,15 +155,15 @@ TEMPLATE_DIRS = (
 	APPPATH + 'classifieds/templates',
 	APPPATH + 'events/templates',
 	APPPATH + 'forum/templates',
-	APPPATH + 'gallery/templates',
-	APPPATH + 'guidebook/templates',
-	APPPATH + 'main/templates',
+    APPPATH + 'gallery/templates',
+    APPPATH + 'guidebook/templates',
+    APPPATH + 'main/templates',
     APPPATH + 'tours/templates',
     APPPATH + 'common/templates',
-	APPPATH + 'zokiguide/templates',
+    APPPATH + 'zokiguide/templates',
  )
 
-TEMPLATE_CONTEXT_PROCESSORS = ( 
+TEMPLATE_CONTEXT_PROCESSORS = (
     'django.contrib.auth.context_processors.auth',
     'django.contrib.messages.context_processors.messages',
     'django.core.context_processors.debug',
@@ -177,7 +177,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 #    'blog.context_processors.common',
  )
 
-INSTALLED_APPS = ( 
+INSTALLED_APPS = (
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -345,7 +345,7 @@ TINYMCE_DEFAULT_CONFIG = {
 INTERNAL_IPS = ( '127.0.0.1', )
 
 
-STATUS_CHOICES = ( 
+STATUS_CHOICES = (
     ( 'active', 'active' ),
     ( 'inactive', 'inactive' ),
     ( 'draft', 'draft' ),

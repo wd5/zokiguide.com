@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-11-27 13:29+0600\n"
+"POT-Creation-Date: 2012-12-06 05:31-0600\n"
 "PO-Revision-Date: 2012-11-26 18:51+0600\n"
 "Last-Translator: Dan Tyan <dan.tyan@gmail.com>\n"
 "Language-Team: Russian <>\n"
@@ -19,55 +19,78 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
 
-#: blogs/templates/blogs/blogs.html:5 blogs/templates/blogs/blogs.html:11
-#: blogs/templates/blogs/blogs.html:13 common/templates/template.html:131
+#: account/templates/account/list-blogs.html:28
+msgid "you don't have any blog"
+msgstr ""
+
+#: blogs/templates/blogs/blogs.html:9 blogs/templates/blogs/blogs.html:11
+#: common/templates/template.html:117
 msgid "Blogs"
 msgstr "Блоги"
 
-#: common/templates/template.html:120 common/templates/template.html.py:125
-msgid "Main"
-msgstr "Главная"
-
-#: common/templates/template.html:121
-msgid "main"
-msgstr "главная"
-
-#: common/templates/template.html:126
+#: catalog/templates/catalog/_catalog.html:4
+#: catalog/templates/catalog/_catalog.html:6
+#: common/templates/template.html:115
 msgid "Catalog"
 msgstr "Каталог"
 
-#: common/templates/template.html:127
+#: catalog/templates/catalog/_catalog.html:9
+msgid "of travel service providers around the world"
+msgstr ""
+
+#: catalog/templates/catalog/_catalog.html:12
+msgid "Add catalog entry"
+msgstr ""
+
+#: common/templates/template.html:114
+msgid "Main"
+msgstr "Главная"
+
+#: common/templates/template.html:116
+#: guidebook/templates/guidebook/_guidebook.html:8
+#: guidebook/templates/guidebook/_guidebook.html:10
 msgid "Guidebook"
 msgstr "Путеводитель"
 
-#: common/templates/template.html:128
-msgid "Events"
-msgstr "События"
-
-#: common/templates/template.html:129
-msgid "Tours"
-msgstr "Туры"
-
-#: common/templates/template.html:130
-msgid "Travelmate"
-msgstr ""
-
-#: common/templates/template.html:132
-msgid "Galleries"
-msgstr "Галлереи"
-
-#: common/templates/template.html:133
-msgid "Calendar"
-msgstr "Календарь"
-
-#: common/templates/template.html:134
-msgid "Forum"
-msgstr "Форум"
-
-#: common/templates/template.html:136
+#: common/templates/template.html:118
 msgid "Classifieds"
 msgstr "Объявления"
 
-#: common/templates/template.html:137
+#: common/templates/template.html:119
 msgid "Online resources"
 msgstr "Веб-ресурсы"
+
+#: common/templates/template.html:121
+msgid "Events"
+msgstr "События"
+
+#: common/templates/template.html:122
+msgid "Tours"
+msgstr "Туры"
+
+#: common/templates/template.html:123
+msgid "Travelmate"
+msgstr ""
+
+#: common/templates/template.html:125
+msgid "Galleries"
+msgstr "Галлереи"
+
+#: common/templates/template.html:126
+msgid "Calendar"
+msgstr "Календарь"
+
+#: common/templates/template.html:127
+msgid "Forum"
+msgstr "Форум"
+
+#: guidebook/templates/guidebook/_guidebook.html:13
+msgid "articles, tips and information about countries"
+msgstr ""
+
+#: guidebook/templates/guidebook/_guidebook.html:17
+msgid "Add guidebook entry"
+msgstr ""
+
+#~ msgid "main"
+#~ msgstr "главная"
