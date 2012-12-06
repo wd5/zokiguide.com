@@ -2,6 +2,7 @@
 #import os
 
 IN_PRODUCTION = True
+#comment
 
 try:
     from local_settings import *
