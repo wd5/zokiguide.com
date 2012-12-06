@@ -1,0 +1,36 @@
+{% extends 'template.html' %}
+
+{% block content %}
+    <div class="container">
+        <div class="content">
+            <div>
+                <form action="/search-result/" id="cse-search-box" class="form-search">
+                    <div>
+                        <input type="hidden" name="cx" value="partner-pub-6824831003901331:7446912876" />
+                        <input type="hidden" name="cof" value="FORID:10" />
+                        <input type="hidden" name="ie" value="UTF-8" />
+                        <input type="text" name="q" size="55" />
+                        <input type="submit" name="sa" value="Search" class="btn" />
+                    </div>
+                </form>
+                <script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>
+            </div>
+
+            <!-- Код результатов поиска -->
+            <div id="cse-search-results"></div>
+            <script type="text/javascript">
+                var googleSearchIframeName = "cse-search-results";
+                var googleSearchFormName = "cse-search-box";
+                var googleSearchFrameWidth = 800;
+                var googleSearchDomain = "www.google.com";
+                var googleSearchPath = "/cse";
+            </script>
+            <script type="text/javascript" src="http://www.google.com/afsonline/show_afs_search.js"></script>
+
+            <!-- Код популярных запросов -->
+            <script type="text/javascript" src="http://www.google.com/cse/query_renderer.js"></script>
+            <div id="queries"></div>
+            <script src="http://www.google.com/cse/api/partner-pub-6824831003901331/cse/7446912876/queries/js?oe=UTF-8&amp;callback=(new+PopularQueryRenderer(document.getElementById(%22queries%22))).render"></script>
+        </div>
+    </div>
+{% endblock %}
