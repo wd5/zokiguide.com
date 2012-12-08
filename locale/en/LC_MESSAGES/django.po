@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-11-26 19:56+0600\n"
+"POT-Creation-Date: 2012-12-08 18:19+0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,56 +17,69 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: blogs/templates/blogs/blogs.html:5 blogs/templates/blogs/blogs.html:13
-#: blogs/templates/blogs/blogs.html:15 common/templates/template.html:119
+#: account/templates/account/list-blogs.html:28
+msgid "you don't have any blog"
+msgstr ""
+
+#: blogs/templates/blogs/blogs.html:9 blogs/templates/blogs/blogs.html:11
+#: common/templates/template.html:117
 msgid "Blogs"
 msgstr ""
 
-#: blogs/templates/blogs/blogs.html:11
-#, python-format
-msgid " %(blogs)s "
+#: bookmarks/templates/bookmarks/common/posts.html:13
+#: catalog/templates/catalog/common/posts.html:17
+#: guidebook/templates/guidebook/common/posts.html:16
+msgid "no entries"
 msgstr ""
 
-#: common/templates/template.html:113
-msgid "Main"
-msgstr ""
-
-#: common/templates/template.html:114
+#: catalog/templates/catalog/_catalog.html:4
+#: catalog/templates/catalog/_catalog.html:6
+#: common/templates/template.html:115
 msgid "Catalog"
 msgstr ""
 
-#: common/templates/template.html:115
-msgid "Guidebook"
+#: catalog/templates/catalog/_catalog.html:9
+msgid "of travel service providers around the world"
+msgstr ""
+
+#: catalog/templates/catalog/_catalog.html:12
+msgid "Add catalog entry"
+msgstr ""
+
+#: common/templates/template.html:114
+msgid "Main"
 msgstr ""
 
 #: common/templates/template.html:116
-msgid "Events"
-msgstr ""
-
-#: common/templates/template.html:117
-msgid "Tours"
+#: guidebook/templates/guidebook/_guidebook.html:8
+#: guidebook/templates/guidebook/_guidebook.html:10
+msgid "Guidebook"
 msgstr ""
 
 #: common/templates/template.html:118
-msgid "Travelmate"
-msgstr ""
-
-#: common/templates/template.html:120
-msgid "Galleries"
-msgstr ""
-
-#: common/templates/template.html:121
-msgid "Calendar"
-msgstr ""
-
-#: common/templates/template.html:122
-msgid "Forum"
-msgstr ""
-
-#: common/templates/template.html:124
 msgid "Classifieds"
 msgstr ""
 
-#: common/templates/template.html:125
+#: common/templates/template.html:119
 msgid "Online resources"
+msgstr ""
+
+#: guidebook/templates/guidebook/_guidebook.html:13
+msgid "articles, tips and information about countries"
+msgstr ""
+
+#: guidebook/templates/guidebook/_guidebook.html:17
+msgid "Add guidebook entry"
+msgstr ""
+
+#: guidebook/templates/guidebook/edit.html:88
+msgid "insert"
+msgstr ""
+
+#: guidebook/templates/guidebook/edit.html:89
+msgid "primary"
+msgstr ""
+
+#: guidebook/templates/guidebook/edit.html:90
+msgid "delete"
 msgstr ""
