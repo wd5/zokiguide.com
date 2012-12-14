@@ -371,3 +371,9 @@ INSTALLED_APPS += ( 'compressor', )
 STATICFILES_FINDERS += ( 'compressor.finders.CompressorFinder', )
 
 #end file
+
+
+
+INSTALLED_APPS += ('disqus',)
+DISQUS_API_KEY = 'IDH8t5QxVAkXpr2zBp19OZDdRkX3YMJbvPtByEFB7fKzyOASIhgfiSs62tixb6LS'
+DISQUS_WEBSITE_SHORTNAME = 'zokiguidecom'
