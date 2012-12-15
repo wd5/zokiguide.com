@@ -1,0 +1,12 @@
+django-disqus
+django_compressor
+django-imagekit
+South
+django-bootstrap-form
+django-tagging
+django-debug-toolbar
+django-smart-selects
+unicode-slugify
+django-tinymce
+django-mptt
+django-grappelli
