@@ -26,11 +26,11 @@ if IN_PRODUCTION:
     STATIC_ROOT = '/home/dantyan/webapps/zokiguide_static/'
     STATIC_URL = 'http://static.zokiguide.com/'
 else:
-    DOCROOT = '/home/dan/www/django/zokiguide/'
-    APPPATH = '/home/dan/www/django/zokiguide/'
-    MEDIA_ROOT = DOCROOT + 'media/'
+    DOCROOT = '/home/dan/www/django1.5/zokiguide/'
+    APPPATH = '/home/dan/www/django1.5/zokiguide/'
+    MEDIA_ROOT = '/home/dan/www/django/zokiguide/media/'
     MEDIA_URL = '/media/'
-    STATIC_ROOT = DOCROOT + 'static/'
+    STATIC_ROOT = '/home/dan/www/django/zokiguide/static/'
     STATIC_URL = '/static/'
 
 
@@ -363,7 +363,7 @@ EMAIL_HOST_USER = DEFAULT_FROM_EMAIL
 EMAIL_HOST_PASSWORD = 'craZZyDemon'
 EMAIL_USE_TLS = True
 
-USE_DJANGO_JQUERY = True
+USE_DJANGO_JQUERY = False
 
 INSTALLED_APPS += ( 'imagekit', )
 
