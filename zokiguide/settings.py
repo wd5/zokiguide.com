@@ -30,7 +30,7 @@ else:
     APPPATH = '/home/dan/www/django1.5/zokiguide/'
     MEDIA_ROOT = '/home/dan/www/django/zokiguide/media/'
     MEDIA_URL = '/media/'
-    STATIC_ROOT = '/home/dan/www/django/zokiguide/static/'
+    STATIC_ROOT = APPPATH + 'static/'
     STATIC_URL = '/static/'
 
 
@@ -377,3 +377,6 @@ STATICFILES_FINDERS += ( 'compressor.finders.CompressorFinder', )
 INSTALLED_APPS += ('disqus',)
 DISQUS_API_KEY = 'IDH8t5QxVAkXpr2zBp19OZDdRkX3YMJbvPtByEFB7fKzyOASIhgfiSs62tixb6LS'
 DISQUS_WEBSITE_SHORTNAME = 'zokiguidecom'
+
+
+#AUTH_USER_MODEL = 'account.Profile'
