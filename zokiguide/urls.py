@@ -38,6 +38,9 @@ urlpatterns = patterns( '',
     url( r'^search-result/', TemplateView.as_view(
         template_name = 'common/google-search-result.html'
     )),
+    (r'^robots.txt$', TemplateView.as_view(
+        template_name='common/robots.txt.html'
+    )),
 
  )
 
