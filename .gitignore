@@ -6,6 +6,5 @@
 .settings
 media/*
 log/*
-migrations/*
 .idea/
 local_settings.py
