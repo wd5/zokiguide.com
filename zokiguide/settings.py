@@ -26,8 +26,8 @@ if IN_PRODUCTION:
     STATIC_ROOT = '/home/dantyan/webapps/zokiguide_static/'
     STATIC_URL = 'http://static.zokiguide.com/'
 else:
-    DOCROOT = '/home/dan/www/django1.5/zokiguide/'
-    APPPATH = '/home/dan/www/django1.5/zokiguide/'
+    DOCROOT = '/home/dan/www/django/zokiguide/'
+    APPPATH = '/home/dan/www/django/zokiguide/'
     MEDIA_ROOT = '/home/dan/www/django/zokiguide/media/'
     MEDIA_URL = '/media/'
     STATIC_ROOT = APPPATH + 'static/'
