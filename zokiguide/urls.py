@@ -8,12 +8,17 @@ from django.views.generic.base import TemplateView
 from django.contrib import admin
 admin.autodiscover()
 
-urlpatterns = patterns( '',
+urlpatterns = patterns( '', url( r'^$', include( 'main.urls' ) ),)
+
+if 'grappelli' in settings.INSTALLED_APPS:
+    urlpatterns += patterns( '', url( r'^grappelli/', include( 'grappelli.urls' ) ),)
+
+urlpatterns += patterns( '',
     # Examples:
     # url(r'^$', 'zokiguide.views.home', name='home'),
     # url(r'^zokiguide/', include('zokiguide.foo.urls')),
 
-    url( r'^grappelli/', include( 'grappelli.urls' ) ),
+
 #    url( r'^admin/filebrowser/', include( site.urls ) ),
     url( r'^tinymce/', include( 'tinymce.urls' ) ),
 
@@ -25,7 +30,7 @@ urlpatterns = patterns( '',
 
     url( r'^chaining/', include( 'smart_selects.urls' ) ),
 
-    url( r'^$', include( 'main.urls' ) ),
+#    url( r'^$', include( 'main.urls' ) ),
     url( r'^account/', include( 'account.urls' ) ),
     url( r'^accounts/', include( 'accounts.urls' ) ),
     url( r'^bookmarks/', include( 'bookmarks.urls' ) ),

@@ -186,14 +186,14 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'grappelli',
+
 #    'filebrowser',
     # Uncomment the next line to enable the admin:
     'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
     'django.contrib.admindocs',
     'mptt',
-    'tinymce',
+
     'slugify',
     'smart_selects',
 
@@ -323,6 +323,9 @@ CACHES = {
     }
 }
 
+# tinymce
+# --------------------------------------------------
+INSTALLED_APPS += ( 'tinymce', )
 TINYMCE_JS_ROOT = STATIC_URL + 'js/tiny_mce/'
 TINYMCE_JS_URL = STATIC_URL + 'js/tiny_mce/tiny_mce.js'
 TINYMCE_DEFAULT_CONFIG = {
@@ -356,6 +359,7 @@ STATUS_CHOICES = (
 SEND_BROKEN_LINK_EMAILS = True
 
 DEFAULT_FROM_EMAIL = 'zokiguide@gmail.com'
+EMAIL_SUBJECT_PREFIX = '[ Zoki Guide ]'
 
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = "587"
@@ -365,18 +369,35 @@ EMAIL_USE_TLS = True
 
 USE_DJANGO_JQUERY = False
 
+
+# imagekit
+# --------------------------------------------------
 INSTALLED_APPS += ( 'imagekit', )
 
+# compressor
+# --------------------------------------------------
 INSTALLED_APPS += ( 'compressor', )
 STATICFILES_FINDERS += ( 'compressor.finders.CompressorFinder', )
 
-#end file
 
 
 
+# disqus
+# --------------------------------------------------
 INSTALLED_APPS += ('disqus',)
 DISQUS_API_KEY = 'IDH8t5QxVAkXpr2zBp19OZDdRkX3YMJbvPtByEFB7fKzyOASIhgfiSs62tixb6LS'
 DISQUS_WEBSITE_SHORTNAME = 'zokiguidecom'
 
 
 #AUTH_USER_MODEL = 'account.Profile'
+
+
+# grappelli
+# --------------------------------------------------
+#INSTALLED_APPS += ('grappelli',)
+
+
+
+
+
+#end file
