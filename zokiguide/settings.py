@@ -179,6 +179,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
  )
 
 INSTALLED_APPS = (
+<<<<<<< HEAD
 #    'django.contrib.auth',
 #    'django.contrib.contenttypes',
 #    'django.contrib.sessions',
@@ -208,6 +209,38 @@ INSTALLED_APPS = (
 #    'forum',
 #    'location',
  )
+=======
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.sites',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+
+
+#    'filebrowser',
+    # Uncomment the next line to enable the admin:
+    'django.contrib.admin',
+    # Uncomment the next line to enable admin documentation:
+    'django.contrib.admindocs',
+    'mptt',
+
+    'slugify',
+    'smart_selects',
+
+    'account',
+    'accounts',
+    'blogs',
+    'bookmarks',
+    'catalog',
+    'classifieds',
+    'common',
+    'forum',
+    'guidebook',
+    'location',
+    'main',
+)
+>>>>>>> 69f494d72127a08dbcf45834a34815095c89c19d
 
 # A sample logging configuration. The only tangible logging
 # performed by this configuration is to send an email to
