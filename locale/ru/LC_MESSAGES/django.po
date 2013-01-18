@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-12-10 00:05+0600\n"
+"POT-Creation-Date: 2013-01-19 00:39+0600\n"
 "PO-Revision-Date: 2012-12-08 18:25+0600\n"
 "Last-Translator: Dan Tyan <dan.tyan@gmail.com>\n"
 "Language-Team: Russian <>\n"
@@ -22,64 +22,119 @@ msgstr ""
 msgid "you don't have any blog"
 msgstr "у вас нет блогов"
 
+#: account/templates/account/settings/avatar.html:37
+#: accounts/templates/accounts/login.html:16
+#: catalog/templates/catalog/edit.html:39
+#: guidebook/templates/guidebook/edit.html:42
+msgid "submit"
+msgstr ""
+
 #: blogs/templates/blogs/blogs.html:9 blogs/templates/blogs/blogs.html:11
-#: common/templates/template.html:117
+#: common/templates/template.html:129
 msgid "Blogs"
 msgstr "Блоги"
 
-#: bookmarks/models.py:19
+#: bookmarks/models.py:20
 msgid "category"
 msgstr ""
 
-#: bookmarks/models.py:23
+#: bookmarks/models.py:24 catalog/templates/catalog/post.html:80
 msgid "site"
 msgstr ""
 
-#: catalog/templates/catalog/_catalog.html:4
-#: catalog/templates/catalog/_catalog.html:6
-#: common/templates/template.html:115
+#: catalog/templates/catalog/_catalog.html:7
+#: catalog/templates/catalog/_catalog.html:9
+#: common/templates/template.html:127
 msgid "Catalog"
 msgstr "Каталог"
 
-#: catalog/templates/catalog/_catalog.html:9
+#: catalog/templates/catalog/_catalog.html:12
 msgid "of travel service providers around the world"
 msgstr ""
 
-#: catalog/templates/catalog/_catalog.html:12
+#: catalog/templates/catalog/_catalog.html:15
 msgid "Add catalog entry"
 msgstr "добавить запись в каталог"
 
-#: common/models.py:27 common/models.py:52
+#: catalog/templates/catalog/post.html:30
+msgid "location"
+msgstr ""
+
+#: catalog/templates/catalog/post.html:33
+msgid "country"
+msgstr ""
+
+#: catalog/templates/catalog/post.html:41
+msgid "city"
+msgstr ""
+
+#: catalog/templates/catalog/post.html:48
+msgid "address"
+msgstr ""
+
+#: catalog/templates/catalog/post.html:55
+msgid "contacts"
+msgstr ""
+
+#: catalog/templates/catalog/post.html:61
+msgid "email"
+msgstr ""
+
+#: catalog/templates/catalog/post.html:68
+msgid "phone"
+msgstr ""
+
+#: catalog/templates/catalog/post.html:87
+msgid "social network"
+msgstr ""
+
+#: common/models.py:31 common/models.py:56
 msgid "title"
 msgstr ""
 
-#: common/models.py:55
+#: common/models.py:59
 msgid "content"
 msgstr ""
 
-#: common/models.py:60
+#: common/models.py:64 common/models.py:216
 msgid "author"
 msgstr ""
 
-#: common/models.py:75
+#: common/models.py:79
 msgid "tags"
 msgstr ""
 
-#: common/templates/template.html:114
+#: common/templates/template.html:95
+msgid "account"
+msgstr ""
+
+#: common/templates/template.html:98
+msgid "logout"
+msgstr ""
+
+#: common/templates/template.html:102
+msgid "login"
+msgstr ""
+
+#: common/templates/template.html:103
+msgid "join"
+msgstr ""
+
+#: common/templates/template.html:126
 msgid "Main"
 msgstr "Главная"
 
-#: common/templates/template.html:116
+#: common/templates/template.html:128
 #: guidebook/templates/guidebook/_guidebook.html:8
 #: guidebook/templates/guidebook/_guidebook.html:10
 msgid "Guidebook"
 msgstr "Путеводитель"
 
-#: common/templates/template.html:118
+#: common/templates/template.html:130
 msgid "Classifieds"
 msgstr "Объявления"
 
-#: common/templates/template.html:119
+#: common/templates/template.html:131
 msgid "Online resources"
 msgstr "Веб-ресурсы"
 
