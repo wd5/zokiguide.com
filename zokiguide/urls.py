@@ -31,16 +31,16 @@ urlpatterns += patterns( '',
     url( r'^chaining/', include( 'smart_selects.urls' ) ),
 
 #    url( r'^$', include( 'main.urls' ) ),
-    url( r'^account/', include( 'account.urls', namespace='account' ) ),
-    url( r'^accounts/', include( 'accounts.urls', namespace='accounts' ) ),
-    url( r'^bookmarks/', include( 'bookmarks.urls' ) ),
-    url( r'^blogs/', include( 'blogs.urls' ) ),
-    url( r'^guidebook/', include( 'guidebook.urls' ) ),
-    url( r'^catalog/', include( 'catalog.urls' ) ),
-    url( r'^classifieds/', include( 'classifieds.urls' ) ),
-    url( r'^forum/', include( 'forum.urls' ) ),
-    url( r'^u/', include( 'u.urls' ) ),
-    url( r'^search-result/', TemplateView.as_view(
+    url(r'^account/', include('account.urls', namespace='account')),
+    url(r'^accounts/', include('accounts.urls', namespace='accounts')),
+    url(r'^bookmarks/', include('bookmarks.urls')),
+    url(r'^blogs/', include('blogs.urls', namespace='blog')),
+    url(r'^guidebook/', include('guidebook.urls')),
+    url(r'^catalog/', include('catalog.urls')),
+    url(r'^classifieds/', include('classifieds.urls')),
+    url(r'^forum/', include('forum.urls')),
+    url(r'^u/', include('u.urls')),
+    url(r'^search-result/', TemplateView.as_view(
         template_name = 'common/google-search-result.html'
     )),
     (r'^robots.txt$', TemplateView.as_view(

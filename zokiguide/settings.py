@@ -93,7 +93,7 @@ STATICFILES_DIRS = (
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
-    APPPATH + 'account/static',
+
     APPPATH + 'accounts/static',
     APPPATH + 'blogs/static',
 	APPPATH + 'bookmarks/static',
@@ -148,7 +148,7 @@ TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
-	APPPATH + 'account/templates',
+
 	APPPATH + 'accounts/templates',
 	APPPATH + 'blogs/templates',
 	APPPATH + 'bookmarks/templates',
@@ -197,7 +197,6 @@ INSTALLED_APPS = (
     'slugify',
     'smart_selects',
 
-    'account',
     'accounts',
     'blogs',
     'bookmarks',
@@ -209,6 +208,12 @@ INSTALLED_APPS = (
     'location',
     'main',
 )
+
+# account ----------------
+INSTALLED_APPS += ('account',)
+TEMPLATE_DIRS += (APPPATH + 'account/templates',)
+STATICFILES_DIRS += (APPPATH + 'account/static',)
+# --------------------------
 
 
 # A sample logging configuration. The only tangible logging
